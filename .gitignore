@@ -1,0 +1,19 @@
+# Gradle build output and caches.
+build/
+.gradle/
+out/
+
+# run-paper test server
+run/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+Thumbs.db
+.DS_Store

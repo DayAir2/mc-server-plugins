@@ -1,0 +1,14 @@
+# Normalise text in the repository, check out native on Windows.
+* text=auto
+
+# The Gradle wrapper script is executed by /bin/sh on Linux and macOS; CRLF
+# endings make it unrunnable there, so pin it to LF regardless of platform.
+gradlew text eol=lf
+*.sh    text eol=lf
+
+# Windows-only, always CRLF.
+gradlew.bat text eol=crlf
+
+# Never touch these.
+gradle/wrapper/gradle-wrapper.jar binary
+*.jar binary
